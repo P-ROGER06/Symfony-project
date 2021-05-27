@@ -15,24 +15,11 @@ use Symfony\Component\Routing\Annotation\Route;
 Class DefaultController extends AbstractController
 
 {
-
     /**
-
      * @Route("/", name="app_index")
-
      */
-
     public function index(): Response
-
     {
-        
-
-        return $this->render('index.html.twig', [
-
-            'website' => 'Wild Séries',
-     
-         ]);
-
+        return $this->render('index.html.twig');
     }
-
 }
