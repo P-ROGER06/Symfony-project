@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+    --firstBgColor: #222222;
+    --secondBgColor: #181818;
+    --cardColor: #2D2D2D;
+    --textColor : #CACACA;
+    --primaryColor: #EB0000;
+}
+
+body {
+    background-color: var(--firstBgColor);
+}
+
+h1 {
+    color: var(--primaryColor);
+}
+

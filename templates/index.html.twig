@@ -1,5 +1,6 @@
-<!doctype html>
+{% extends 'base.html.twig' %}
 
+{% block content %}
 <html lang="en">
 
 <head>
@@ -13,7 +14,9 @@
 <body>
 
    <h1>{{ website }} Bienvenue !</h1>
+   <img src="{{ asset('build/obturateureffect.png') }}" alt=""/>
 
 </body>
 
 </html>
+{% endblock %}
