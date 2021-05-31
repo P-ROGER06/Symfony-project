@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
+
 :root {
     --firstBgColor: #222222;
     --secondBgColor: #181818;
@@ -10,9 +11,21 @@
 
 body {
     background-color: var(--firstBgColor);
+    color: var(--textColor);
 }
 
 h1 {
     color: var(--primaryColor);
+}
+
+.poster {
+    max-width: 180px;
+    max-height: 260px;
+    overflow: hidden;
+}
+
+.card {
+    background-color: var(--cardColor);
+    height: 260px;
 }
 

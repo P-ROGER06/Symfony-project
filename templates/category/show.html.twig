@@ -1,13 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}All programs
+{% block title %}
+	Category #{{ category.name }}
 {% endblock %}
 
 {% block body %}
-	<h1>Toutes les séries
-	</h1>
+<h1>{{ category.name }}</h1>
 	<div class="card-group">
-
 		{% for program in programs %}
 			<div class="card mb-3 ml-5 mr-5" style="min-width: 540px;">
 				<div class="row g-0">
@@ -27,11 +26,12 @@
 				</div>
 			</div>
 		{% else %}
-			Aucune série trouvée.
+			Aucune série trouvée
 		{% endfor %}
 	</div>
 
-	<a href="{{ path('app_index') }}">
-		Retour à l'accueil
+	<a href="{{ path('program_index') }}">
+		Retour à la liste des programmes
 	</a>
+
 {% endblock %}
